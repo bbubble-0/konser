@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out both;
+  }
+</style>
+<section>
+    <nav class="fixed top-0 left-0 w-full z-50 bg-transparent">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-caramel hover:bg-lightcream hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+              
+              
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <div class="flex items-center space-x-4">
+                  <img src="desain/logo-removebg-preview.png" alt="Logo" class="h-8 w-auto">
+                  <h1 class="text-amber-950 font-bold ">MOONIKI</h1>
+                  <div class="ml-auto">
+                  <a href="index.html" class="rounded-md bg-amber-950 px-3 py-2 text-sm font-medium text-orange-100 hover:bg-amber-900" aria-current="page">Home</a>
+                  <a href="music.html" class="rounded-md px-3 py-2 text-sm font-medium text-red-950  hover:text-amber-800">Music</a>
+                  <a href="merch.html" class="rounded-md px-3 py-2 text-sm font-medium text-red-950  hover:text-amber-800">Merch</a>
+                  <a href="tour.html" class="rounded-md px-3 py-2 text-sm font-medium text-red-950  hover:text-amber-800">Tour Dates</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+                <div class="ml-auto">
+          <a href="#" class="rounded-md bg-amber-950 px-3 py-2 text-sm font-medium text-orange-100 hover:bg-amber-900" aria-current="page">Sign Up</a>
+        </div>
+      </nav>
+</section>
+
+    <section id="music" class="bg-gradient-to-b from-[#FBE4D8] to-[#F3ECF7] min-h-screen flex flex-col items-center justify-start py-16">
+    
+        <h2 class="text-4xl text-[#5A4A42] font-serif mb-4">Music</h2>
+
+      
+        <p class="text-lg text-[#5A4A42] text-center px-6 max-w-2xl">
+            Listen to the best tracks from our concerts! Enjoy special playlists and released albums.
+        </p>
+
+              <div class="mt-11"></div>
+
+           
+            <div class="flex justify-center gap-8 mb-8 ">
+               
+                <div>
+                <img src="album/album1.jpg" alt="Image 1" class="w-48 h-auto rounded-lg shadow-md mb-4 animate-fadeInUp delay-[100ms]">
+                    <div class="text-[#5A4A42] text-lg">
+                        <p class="mb-2 font-serif font-bold text-[#5A4A42] text-lg">Every Summertime</p>
+                        <p class="mb-2 text-[#9C7A84] font-semibold">2021 — Single</p>
+                        <p class="mb-2">Sunlit laughter dancing </p>
+                        <p>through old familiar streets</p>
+                    </div>
+            </div>
+
+                <div>
+                <img src="album/album 2.jpg" alt="Image 2" class="w-48 h-auto rounded-lg shadow-md mb-4 animate-fadeInUp delay-[200ms]">
+                    <div class="text-[#5A4A42] text-lg">
+                        <p class="mb-2 font-serif font-bold text-[#5A4A42] text-lg">Ocean & Engines</p>
+                        <p class="mb-2 text-[#9C7A84] font-semibold">2022 — Single</p>
+                        <p class="mb-2">Letters fading like tide  </p>
+                        <p>lines lost to morning light</p>
+                    </div>
+                </div>
+
+                <div>
+                <img src="album/album 3.jpg" alt="Image 3" class="w-48 h-auto rounded-lg shadow-md mb-4 animate-fadeInUp delay-[300ms]">
+                    <div class="text-[#5A4A42] text-lg">
+                        <p class="mb-2 font-serif font-bold text-[#5A4A42] text-lg">La La Lost You</p>
+                        <p class="mb-2 text-[#9C7A84] font-semibold">2019 — Single</p>
+                        <p class="mb-2">Goodbyes whispered under </p>
+                        <p>skies we used to share </p>
+                    </div>
+                </div>
+
+            <div>
+            <img src="album/album 4.jpg" alt="Image 4" class="w-48 h-auto rounded-lg shadow-md mb-4 animate-fadeInUp delay-[400ms]">
+               <div class="text-[#5A4A42] text-lg">
+                        <p class="mb-2 font-serif font-bold text-[#5A4A42] text-lg">Buzz</p>
+                        <p class="mb-2 text-[#9C7A84] font-semibold">2023 — Single</p>
+                        <p class="mb-2"> Burning bright with a spark</p>
+                        <p>we never tried to hide</p>
+                    </div>
+            </div>
+        </div>
+</section>
+
+</body>
+</html>

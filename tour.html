@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    .playfair {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .tour-item {
+    position: relative;
+    cursor: pointer;
+    color: #7e7e7e;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .tour-item::after {
+    content: "";
+    display: block;
+    width: 70%;
+    margin: 0.5rem auto 0;
+    border-bottom: 1px solid #e0d6d1;
+    transition: opacity 0.3s;
+  }
+
+  .tour-item:hover {
+    background-color: #a3948c;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+  }
+
+  .tour-item:hover::after {
+    opacity: 0; /* Sembunyikan garis pas hover */
+  }
+  </style>
+</head>
+<body>
+    <section>
+    <nav class="fixed top-0 left-0 w-full z-50 bg-transparent">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+             
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-caramel hover:bg-lightcream hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+              
+              
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <div class="flex items-center space-x-4">
+                  <img src="desain/logo-removebg-preview.png" alt="Logo" class="h-8 w-auto">
+                  <h1 class="text-amber-950 font-bold ">MOONIKI</h1>
+                  <div class="ml-auto">
+                  <a href="index.html" class="rounded-md bg-amber-950 px-3 py-2 text-sm font-medium text-orange-100 hover:bg-amber-900" aria-current="page">Home</a>
+                  <a href="music.html" class="rounded-md px-3 py-2 text-sm font-medium text-red-950  hover:text-amber-800">Music</a>
+                  <a href="merch.html" class="rounded-md px-3 py-2 text-sm font-medium text-red-950  hover:text-amber-800">Merch</a>
+                  <a href="tour.html" class="rounded-md px-3 py-2 text-sm font-medium text-red-950  hover:text-amber-800">Tour Dates</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+                <div class="ml-auto">
+          <a href="#" class="rounded-md bg-amber-950 px-3 py-2 text-sm font-medium text-orange-100 hover:bg-amber-900" aria-current="page">Sign Up</a>
+        </div>
+      </nav>
+    </section>
+      
+</section>
+   <section class="py-20 bg-gradient-to-b from-[#f7f0ec] to-white text-center">
+  <h2 class="text-4xl font-serif font-semibold text-[#4a3c36] mb-12 mt-11">Tour Dates</h2>
+  <div class="space-y-6 w-full max-w-xl mx-auto">
+    <div class="tour-item">SINGAPORE · May 20, 2025</div>
+    <div class="tour-item">TOKYO · May 26, 2025</div>
+    <div class="tour-item">LOS ANGELES · June 5, 2025</div>
+    <div class="tour-item">MELBOURNE · June 25, 2025</div>
+  </div>
+</section>
+
+</body>
+</html>
